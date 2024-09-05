@@ -21,7 +21,7 @@ const Signup = () => {
   const handleSubmit = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:1000/api/v1/sign-up",
+        "https://podcasters.onrender.com/api/v1/sign-up",
         Values
       );
       navigate("/login");
