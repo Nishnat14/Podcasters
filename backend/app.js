@@ -10,7 +10,7 @@ require("dotenv").config();
 require("./conn/conn");
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173","https://flourishing-kataifi-3aea5c.netlify.app/"],
     credentials: true,
   })
 );
