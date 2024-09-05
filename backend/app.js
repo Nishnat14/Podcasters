@@ -10,7 +10,7 @@ require("dotenv").config();
 require("./conn/conn");
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173","https://main--ubiquitous-ganache-ff6d42.netlify.app/"],
     credentials: true,
   })
 );
