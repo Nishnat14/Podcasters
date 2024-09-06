@@ -42,6 +42,7 @@ router.post("/add-podcast", authMiddleware, upload, async (req, res) => {
   }
 });
 
+
 //get all podcast
 router.get("/get-podcasts", async (req, res) => {
   try {
