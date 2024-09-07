@@ -52,7 +52,7 @@ const InputPodcast = () => {
     data.append("audioFile", audioFile);
     try {
       const res = await axios.post(
-        "https://podcasters.onrender.com/api/v1/add-podcast",
+        "http://localhost:1000/api/v1/add-podcast",
         data,
         {
           headers: {

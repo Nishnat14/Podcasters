@@ -8,7 +8,7 @@ const DescriptionPage = () => {
   useEffect(() => {
     const fetch = async () => {
       const res = await axios.get(
-        `https://podcasters.onrender.com/api/v1/get-podcast/${id}`,
+        `http://localhost:1000/api/v1/get-podcast/${id}`,
         { withCredentials: true }
       );
       setPodcasts(res.data.data);
@@ -21,7 +21,7 @@ const DescriptionPage = () => {
         <>
           <div className="w-2/6 flex items-center justify-center md:justify-start md:items-start">
             <img
-              src={`https://podcasters.onrender.com/${Podcasts.frontImage}`}
+              src={`http://localhost:1000/${Podcasts.frontImage}`}
               alt="/"
               className="rounded w-full h-[50vh] object-cover"
             />

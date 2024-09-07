@@ -7,7 +7,7 @@ const YourPodcasts = () => {
   useEffect(() => {
     const fetch = async () => {
       const res = await axios.get(
-        "https://podcasters.onrender.com/api/v1/get-user-podcasts",
+        "http://localhost:1000/api/v1/get-user-podcasts",
         { withCredentials: true }
       );
       setPodcasts(res.data.data);

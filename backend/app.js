@@ -10,7 +10,7 @@ require("dotenv").config();
 require("./conn/conn");
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://podcaster-app.netlify.app"],
+    origin: ["http://localhost:5173"],
     credentials: true,
   })
 );

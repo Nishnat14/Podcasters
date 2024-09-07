@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -33,9 +32,9 @@ const Home = () => {
             Listen to the most popular podcasts on just one platform -{" "}
             <b>PODCASTER</b>
           </p>
-          <Link to="/login" className="px-6 py-4 bg-green-900 text-white font-semibold rounded-full mt-6 lg:mt-8">
+          <button className="px-6 py-4 bg-green-900 text-white font-semibold rounded-full mt-6 lg:mt-8">
             Login to listen
-          </Link>
+          </button>
         </div>
         <div className="mt-6 lg:mt-0">
           <p className="text-zinc-600 font-bold text-center lg:text-end">
